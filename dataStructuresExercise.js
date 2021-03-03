@@ -17,6 +17,7 @@ jedi.unshift("Yoda");
 
 // 1e
 console.log(jedi.slice(1,2));
+// console.log(jedi[1]);
 
 // 1f
 jedi.pop();
@@ -54,14 +55,36 @@ console.log(droids.protocol);
 
 // 3d
 droids["assassin"] = "IG-11";
+// droids.assassin = "IG-11";
 console.log(droids);
 
 // BONUS
 
 // 4
-console.log(starWarsVillians);
+console.log(starWarsVillians[0][6]);
 
 // 5
 console.log(starWarsVillians.slice(-4,-3));
 
 // 6a
+const starWarsMovies = [
+    {
+        episodeOne: "The Phantom Menace",
+        episodeTwo: "Attack of the Clones",
+        episodeThree: "Revenge of the Sith"
+    },
+    {
+        episodeFour: "A New Hope",
+        episodeFive: "The Empire Strikes Back",
+        episodeSix: "Return of the Jedi"
+    },
+    {
+        episodeSeven: "The Force Awakens",
+        episodeEight: "The Last Jedi",
+        episodeNine: "The Rise of Skywalker"
+    }
+];
+
+// 6b
+starWarsMovies.splice(1, 0, "Solo", "Rogue One");
+console.log(starWarsMovies);
